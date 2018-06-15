@@ -18,7 +18,7 @@ public class Teacher {
 //	@GeneratedValue(strategy= GenerationType.SEQUENCE, generator="SEQ_TEACHER")
 	
 //	@Range(min=5,max=15, message="El id tiene que estar entre {min} y {max}")
-	@Min(value=5,message="El mínimo del campo id es {value}")
+//	@Min(value=5,message="El mínimo del campo id es {value}")
 	private Long id;
 
 	@Size(min = 4, max = 20, message = "El nombre debe tener mas de {min} letras y menos de {max}")

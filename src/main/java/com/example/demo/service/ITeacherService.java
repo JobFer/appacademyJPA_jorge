@@ -8,9 +8,13 @@ public interface ITeacherService {
 	public Iterable<Teacher> findAll();
 
 	public void save(Teacher teacher);
-	
-//	public Teacher findOne(Long id);
-//	
+
+	public Object findOne(Long id);
+
+	public void delete(Long id);
+
+	public void modificar(Teacher teacher);
+
 //	public void delete(Long id);
 //	
 //	public Teacher findByName(String name);

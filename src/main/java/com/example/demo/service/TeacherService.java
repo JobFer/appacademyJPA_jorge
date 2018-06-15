@@ -34,6 +34,21 @@ public class TeacherService implements ITeacherService {
 		teacherRepository.save(teacher);
 	}
 
+	@Override
+	public Object findOne(Long id) {
+		return teacherRepository.findOne(id);
+	}
+
+	@Override
+	public void delete(Long id) {
+		teacherRepository.delete(id);
+	}
+
+	@Override
+	public void modificar(Teacher teacher) {
+		teacherRepository.save(teacher);
+	}
+
 //	@Override
 //	public Teacher findOne(Long id) {
 //		return teacherRepository.findOne(id);

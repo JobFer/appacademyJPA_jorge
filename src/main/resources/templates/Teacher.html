@@ -36,12 +36,16 @@
 					<tr>
 						<th>Id</th>
 						<th>Name</th>
+					    <th>Modificar</th>
+                		<th>Eliminar</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr th:each="teacher:${teachers}">
 						<td th:text="${teacher.id}"></td>
 						<td th:text="${teacher.name}"></td>
+                		<td><a th:href="${'/teachers/edit/' + teacher.id}" class="btn btn-default">Modificar</a></td>
+                		<td><a th:href="${'/teachers/delete/' + teacher.id}" class="btn btn-danger">Eliminar</a></td>						
 					</tr>
 				</tbody>
 			</table>
